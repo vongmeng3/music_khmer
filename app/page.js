@@ -376,8 +376,7 @@ export default function Home() {
       )}
       <footer style={styles.footer}>
         Built in ICT 340 — Vibe Coding, American University of Phnom Penh, Fall
-        2026. This archive is under construction all semester. Come back in
-        December.
+        2026. Curated by {collection.curator}.
       </footer>
     </main>
   );
