@@ -12,7 +12,7 @@ export default function EntryOwnerActions({ id, owner, title, href }) {
 
   return (
     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: 16, margin: "0 0 24px" }}>
-      {!deleted && <Link href={href} style={{ color: "#2EE6A8", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
+      {!deleted && <Link href={href} style={{ color: "#F0F2F0", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
         Edit / កែប្រែ
       </Link>}
       <EntryDeleteButton id={id} owner={owner} title={title} supabase={supabase} onDeleted={() => setDeleted(true)} />

@@ -10,6 +10,9 @@ const collection = {
   // What does your archive collect? e.g. "Khmer Proverbs"
   name: "Khmer Traditional Music",
 
+  // The same name in Khmer, shown beside the English one.
+  nameKh: "តន្ត្រីប្រពៃណីខ្មែរ",
+
   // One sentence: what is this archive, and why does it matter?
   description: "This archive collects traditional Khmer music, preserving the rich cultural heritage of Cambodia and making it accessible to future generations.",
 

@@ -5,12 +5,12 @@ import { useState } from "react";
 import { entryHref } from "../lib/entry-slugs.js";
 
 const itemStyles = {
-  item: { padding: "18px 0", borderBottom: "1px solid rgba(226, 183, 109, 0.2)" },
-  title: { color: "#F4F0E8", fontSize: 18, fontWeight: 700, textDecoration: "none" },
-  meta: { margin: "6px 0 12px", color: "#97A1B3", fontSize: 14 },
+  item: { padding: "18px 0", borderBottom: "1px solid rgba(240, 242, 240, 0.2)" },
+  title: { color: "#F0F2F0", fontSize: 18, fontWeight: 700, textDecoration: "none" },
+  meta: { margin: "6px 0 12px", color: "#9A989F", fontSize: 14 },
   actions: { display: "flex", flexWrap: "wrap", gap: 10 },
-  publish: { padding: "9px 16px", color: "#14181F", background: "#2EE6A8", border: 0, borderRadius: 8, fontWeight: 700, cursor: "pointer" },
-  ret: { padding: "9px 16px", color: "#E2B76D", background: "transparent", border: "1px solid rgba(226, 183, 109, 0.5)", borderRadius: 8, fontWeight: 700, cursor: "pointer" },
+  publish: { padding: "9px 16px", color: "#222124", background: "#F0F2F0", border: 0, borderRadius: 8, fontWeight: 700, cursor: "pointer" },
+  ret: { padding: "9px 16px", color: "#C9C6CF", background: "transparent", border: "1px solid rgba(240, 242, 240, 0.5)", borderRadius: 8, fontWeight: 700, cursor: "pointer" },
   error: { margin: "10px 0 0", color: "#FF8A8A", fontSize: 14 },
 };
 

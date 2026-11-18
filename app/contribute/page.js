@@ -10,7 +10,7 @@ import { ALLOWED_TYPES, MAX_FILE_SIZE, MAX_TITLE_LENGTH, getYouTubeId, validateE
 
 // Same back link as the review page, so every view can return home.
 const backLink = (
-  <Link href="/" style={{ color: "#2EE6A8", display: "inline-block", marginBottom: 24, textDecoration: "none" }}>
+  <Link href="/" style={{ color: "#F0F2F0", display: "inline-block", marginBottom: 24, textDecoration: "none" }}>
     ← Back to Browse
   </Link>
 );

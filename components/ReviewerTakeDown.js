@@ -55,10 +55,10 @@ export default function ReviewerTakeDown({ id, title }) {
   return (
     <div style={{ margin: "0 0 24px" }}>
       <button type="button" onClick={handleTakeDown} disabled={pending || finished}
-        style={{ padding: "6px 12px", color: "#E2B76D", background: "rgba(226, 183, 109, 0.08)", border: "1px solid rgba(226, 183, 109, 0.4)", borderRadius: 8, fontSize: 14, cursor: pending || finished ? "default" : "pointer" }}>
+        style={{ padding: "6px 12px", color: "#C9C6CF", background: "rgba(240, 242, 240, 0.08)", border: "1px solid rgba(240, 242, 240, 0.4)", borderRadius: 8, fontSize: 14, cursor: pending || finished ? "default" : "pointer" }}>
         {finished ? "Taken down" : pending ? "Taking down..." : "Take down / ដកចេញ"}
       </button>
-      {message && <p role={finished ? "status" : "alert"} style={{ color: finished ? "#E2B76D" : "#FFB3B3", fontSize: 14, lineHeight: 1.5 }}>{message}</p>}
+      {message && <p role={finished ? "status" : "alert"} style={{ color: finished ? "#C9C6CF" : "#FFB3B3", fontSize: 14, lineHeight: 1.5 }}>{message}</p>}
     </div>
   );
 }

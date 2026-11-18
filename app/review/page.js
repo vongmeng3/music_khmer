@@ -45,7 +45,7 @@ export default async function ReviewPage() {
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Link href="/" style={{ color: "#2EE6A8", display: "inline-block", marginBottom: 24, textDecoration: "none" }}>← Back to Browse</Link>
+        <Link href="/" style={{ color: "#F0F2F0", display: "inline-block", marginBottom: 24, textDecoration: "none" }}>← Back to Browse</Link>
         <div style={styles.kicker}>REVIEW QUEUE / ការពិនិត្យ</div>
         <h1 style={styles.title}>Waiting for review</h1>
         <p style={styles.description}>Oldest first. Open an entry to read it before you decide.</p>

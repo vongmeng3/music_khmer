@@ -55,8 +55,8 @@ export default function EntryDeleteButton({ id, owner, title, supabase, onDelete
         style={{ padding: "6px 12px", color: "#FFB3B3", background: "rgba(255, 138, 138, 0.08)", border: "1px solid rgba(255, 138, 138, 0.25)", borderRadius: 8, fontSize: 14, cursor: pending || finished ? "default" : "pointer" }}>
         {finished ? "Deleted" : pending ? "Deleting..." : "Delete / លុប"}
       </button>
-      {message && <p role={finished ? "status" : "alert"} style={{ color: finished ? "#E2B76D" : "#FFB3B3", fontSize: 14, lineHeight: 1.5 }}>{message}</p>}
-      {finished && <Link href="/" style={{ color: "#2EE6A8", fontSize: 14 }}>Return to archive</Link>}
+      {message && <p role={finished ? "status" : "alert"} style={{ color: finished ? "#C9C6CF" : "#FFB3B3", fontSize: 14, lineHeight: 1.5 }}>{message}</p>}
+      {finished && <Link href="/" style={{ color: "#F0F2F0", fontSize: 14 }}>Return to archive</Link>}
     </div>
   );
 }

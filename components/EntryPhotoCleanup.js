@@ -24,14 +24,14 @@ export default function EntryPhotoCleanup({ supabase, snapshot }) {
 
   return (
     <div>
-      <p role={removed ? "status" : "alert"} style={{ color: "#E2B76D", fontSize: 14, lineHeight: 1.5 }}>
+      <p role={removed ? "status" : "alert"} style={{ color: "#C9C6CF", fontSize: 14, lineHeight: 1.5 }}>
         {removed ? "Photo removed." : PHOTO_CLEANUP_FAILURE}
       </p>
       {!removed && <button type="button" onClick={handleRetry} disabled={pending}
-        style={{ padding: "6px 12px", color: "#F4F0E8", background: "#1C222C", border: "1px solid rgba(226, 183, 109, 0.25)", borderRadius: 8, cursor: pending ? "default" : "pointer" }}>
+        style={{ padding: "6px 12px", color: "#F0F2F0", background: "#2A292D", border: "1px solid rgba(240, 242, 240, 0.25)", borderRadius: 8, cursor: pending ? "default" : "pointer" }}>
         {pending ? "Retrying..." : "Retry photo cleanup"}
       </button>}
-      <Link href="/" style={{ display: "inline-block", marginLeft: 16, color: "#2EE6A8", fontSize: 14 }}>Return to archive</Link>
+      <Link href="/" style={{ display: "inline-block", marginLeft: 16, color: "#F0F2F0", fontSize: 14 }}>Return to archive</Link>
     </div>
   );
 }

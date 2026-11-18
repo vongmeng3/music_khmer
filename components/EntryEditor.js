@@ -50,7 +50,7 @@ export default function EntryEditor({ id }) {
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Link href={entryHref(record.entry || { id })} style={{ color: "#2EE6A8", display: "inline-block", marginBottom: 24, textDecoration: "none" }}>← Back to entry</Link>
+        <Link href={entryHref(record.entry || { id })} style={{ color: "#F0F2F0", display: "inline-block", marginBottom: 24, textDecoration: "none" }}>← Back to entry</Link>
         <div style={styles.kicker}>EDIT / កែប្រែ</div>
         <h1 style={styles.title}>Edit your entry</h1>
         <p style={styles.description}>Update the archive information. Leave the photo field empty to keep the current photo.</p>

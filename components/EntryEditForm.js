@@ -59,7 +59,7 @@ export default function EntryEditForm({ entry, supabase }) {
       <button type="submit" disabled={submitting} style={{ ...styles.submitButton, ...(submitting ? styles.submitButtonDisabled : {}) }}>
         {submitting ? "Saving..." : "Save changes / រក្សាទុក"}
       </button>
-      <Link href={entryHref(entry)} style={{ display: "inline-block", marginTop: 16, color: "#2EE6A8", pointerEvents: submitting ? "none" : undefined }} aria-disabled={submitting}>Cancel</Link>
+      <Link href={entryHref(entry)} style={{ display: "inline-block", marginTop: 16, color: "#F0F2F0", pointerEvents: submitting ? "none" : undefined }} aria-disabled={submitting}>Cancel</Link>
     </form>
   );
 }

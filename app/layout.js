@@ -1,4 +1,6 @@
 import collection from "../collection.config.js";
+import ArchiveNav from "../components/ArchiveNav.js";
+import ParticleField from "../components/ParticleField.js";
 import "./globals.css";
 
 export const metadata = {
@@ -10,7 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <ParticleField />
+        <ArchiveNav />
+        <div className="site-content">{children}</div>
       </body>
     </html>
   );
