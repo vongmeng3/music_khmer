@@ -30,7 +30,17 @@ export async function middleware(request) {
       },
     });
 
-    await supabase.auth.getUser();
+    // If Supabase is slow or unreachable, stop waiting after 4 seconds so the
+    // page still loads instead of Vercel timing out the whole request.
+    let timer;
+    const timeout = new Promise((_, reject) => {
+      timer = setTimeout(() => reject(new Error("Supabase did not answer within 4 seconds")), 4000);
+    });
+    try {
+      await Promise.race([supabase.auth.getUser(), timeout]);
+    } finally {
+      clearTimeout(timer);
+    }
   } catch (error) {
     // A bad setting or a Supabase outage should not take the whole site down.
     // The visitor is simply treated as logged out for this request.
