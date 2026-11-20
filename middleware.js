@@ -40,7 +40,11 @@ export async function middleware(request) {
   return response;
 }
 
+// Run on Node.js instead of Vercel's Edge runtime: the Supabase library uses
+// Node features (node:buffer) that made the Edge version fail to load, which
+// Vercel shows as 500 MIDDLEWARE_INVOCATION_FAILED on every page.
 // Skip Next's build files and images; they never need the login.
 export const config = {
+  runtime: "nodejs",
   matcher: ["/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)"],
 };
